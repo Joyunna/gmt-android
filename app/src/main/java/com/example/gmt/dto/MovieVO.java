@@ -1,13 +1,21 @@
-package com.example.gmt;
+package com.example.gmt.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MovieVO {
-
+    @JsonProperty("id")
     private Long id;
+
+    @JsonProperty("name")
     private String name;
+
+    @JsonProperty("thumbnail")
     private String thumbnail;
 
-    public MovieVO(Long id, String name, String thumbnail) {
+    public MovieVO(){
 
+    }
+    public MovieVO(Long id, String name, String thumbnail) {
         this.id = id;
         this.name = name;
         this.thumbnail = thumbnail;

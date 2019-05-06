@@ -1,8 +1,11 @@
-package com.example.gmt;
+package com.example.gmt.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.example.gmt.view.PosterFragment;
+import com.example.gmt.dto.MovieVO;
 
 import java.util.ArrayList;
 import java.util.List;
